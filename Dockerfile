@@ -22,4 +22,4 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/cli.js ./cli.js
 COPY --from=builder /app/index.js ./index.js
 
-CMD ["cli.js"]
+CMD ["node", "cli.js"]
